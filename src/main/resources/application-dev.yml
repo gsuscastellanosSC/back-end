@@ -21,10 +21,3 @@ spring:
 logging:
   level:
     com.colegio.controllers: DEBUG
-
-server:
-  port: 8090
-  error:
-    include-message: always
-  servlet:
-    context-path: /

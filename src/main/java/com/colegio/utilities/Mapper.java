@@ -14,9 +14,6 @@ public class Mapper {
                 .builder()
                 .id(profesor.getId())
                 .nombre(profesor.getNombre())
-                .asignaturas(profesor.getAsignaturas().stream()
-                        .map(this::toAsignaturaDTO)
-                        .collect(Collectors.toList()))
                 .build();
     }
 

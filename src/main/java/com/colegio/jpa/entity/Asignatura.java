@@ -18,12 +18,12 @@ public class Asignatura {
     private String nombre;
 
     @ManyToOne
-    @JoinColumn(name = "profesor_id", nullable = false)
-    private Profesor profesor;
-
-    @ManyToOne
     @JoinColumn(name = "curso_id", nullable = false)
     private Curso curso;
+
+    @ManyToOne
+    @JoinColumn(name = "profesor_id", nullable = false)
+    private Profesor profesor;
 
     @ManyToMany
     @JoinTable(
